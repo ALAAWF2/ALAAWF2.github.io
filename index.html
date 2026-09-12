@@ -823,6 +823,7 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
       <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M18 18 6 6M6 17V6h11"/></symbol>
       <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
       <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6.4 8h11.2l1.15 12H5.25L6.4 8Z"/><path d="M9.2 8V6.4a2.8 2.8 0 0 1 5.6 0V8"/></symbol>
       <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
       <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
       <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
@@ -930,6 +931,7 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
             <button type="button" data-service-filter="systems" aria-pressed="false" aria-controls="service-list"><span>الأنظمة والأتمتة</span><svg class="icon" aria-hidden="true"><use href="#i-branch"/></svg></button>
             <button type="button" data-service-filter="insight" aria-pressed="false" aria-controls="service-list"><span>البيانات والذكاء</span><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></button>
             <button type="button" data-service-filter="operations" aria-pressed="false" aria-controls="service-list"><span>تشغيل الفروع</span><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></button>
+            <button type="button" data-service-filter="stores" aria-pressed="false" aria-controls="service-list"><span>المتاجر الصغيرة</span><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg></button>
           </div>
           <a class="text-link services-help" href="#contact">لنحدّد نقطة البداية معًا <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
@@ -980,6 +982,30 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
         <details class="service" id="service-11" data-category="operations">
           <summary><span class="service-marker"><span class="service-number">11</span><svg class="icon service-icon" aria-hidden="true"><use href="#i-shield"/></svg></span><span><span class="service-title">لوحة تحكم إدارية موحدة</span><span class="service-subtitle" lang="en" dir="ltr">UNIFIED MISSION CONTROL</span><span class="service-category">تشغيل الفروع</span></span><span class="service-duration"><bdi>2–4</bdi> أسابيع</span><span class="expand" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
           <div class="service-body"><p>غرفة عمليات واحدة تعرض صحة الأنظمة: الخوادم والمزامنات والأجهزة — مع تنبيه يصلك عند أي خلل قبل أن يلاحظه أحد.</p><ul class="service-deliverables"><li>مراقبة على مدار الساعة</li><li>تنبيه فوري عند الخلل</li><li>استجابة أسرع وتوقف أقل</li></ul></div>
+        </details>
+        <details class="service" id="service-12" data-category="stores">
+          <summary><span class="service-marker"><span class="service-number">12</span><svg class="icon service-icon" aria-hidden="true"><use href="#i-check"/></svg></span><span><span class="service-title">تهيئة المتجر تقنيًا</span><span class="service-subtitle" lang="en" dir="ltr">STORE SETUP &amp; READINESS</span><span class="service-category">المتاجر الصغيرة</span></span><span class="service-duration"><bdi>3–6</bdi> أيام</span><span class="expand" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="service-body"><p>من متجر مفتوح بلا مبيعات إلى متجر جاهز يستقبل الطلبات: الدفع، الشحن، الضريبة، والفوترة — كلها مضبوطة قبل أول طلب.</p><ul class="service-deliverables"><li>ضبط الدفع والشحن والضريبة</li><li>تهيئة الفوترة الإلكترونية</li><li>جلسة تشغيل ودليل مختصر</li></ul></div>
+        </details>
+        <details class="service" id="service-13" data-category="stores">
+          <summary><span class="service-marker"><span class="service-number">13</span><svg class="icon service-icon" aria-hidden="true"><use href="#i-clock"/></svg></span><span><span class="service-title">تقارير المتجر اليومية</span><span class="service-subtitle" lang="en" dir="ltr">DAILY STORE REPORTS</span><span class="service-category">المتاجر الصغيرة</span></span><span class="service-duration"><bdi>1–2</bdi> أسبوع</span><span class="expand" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="service-body"><p>كل صباح يصلك تقرير واضح: مبيعات أمس، أفضل المنتجات، الطلبات المتأخرة، والمخزون القريب من النفاد — بدون ما تفتح أي لوحة.</p><ul class="service-deliverables"><li>تقرير صباحي (واتساب أو إيميل)</li><li>تنبيه مبكر للمخزون</li><li>ملخص أسبوعي للأرقام</li></ul></div>
+        </details>
+        <details class="service" id="service-14" data-category="stores">
+          <summary><span class="service-marker"><span class="service-number">14</span><svg class="icon service-icon" aria-hidden="true"><use href="#i-sync"/></svg></span><span><span class="service-title">ربط المتجر بالمخزون والمحاسبة</span><span class="service-subtitle" lang="en" dir="ltr">SYNC: STORE ↔ INVENTORY &amp; ACCOUNTING</span><span class="service-category">المتاجر الصغيرة</span></span><span class="service-duration"><bdi>2–4</bdi> أسابيع</span><span class="expand" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="service-body"><p>مخزون متجرك يتحدّث من مستودعك أو ملفك تلقائيًا، ومبيعات المتجر تنزل بالتقارير والمحاسبة — بلا نسخ ولصق.</p><ul class="service-deliverables"><li>مزامنة المخزون بين المتجر والمستودع</li><li>ربط مبيعات المتجر بالمحاسبة</li><li>تنبيه فوري لحالات النقص</li></ul></div>
+        </details>
+        <details class="service" id="service-15" data-category="stores">
+          <summary><span class="service-marker"><span class="service-number">15</span><svg class="icon service-icon" aria-hidden="true"><use href="#i-chart"/></svg></span><span><span class="service-title">لوحة أرباح المتجر</span><span class="service-subtitle" lang="en" dir="ltr">SIMPLE PROFIT BOARD</span><span class="service-category">المتاجر الصغيرة</span></span><span class="service-duration"><bdi>2–3</bdi> أسابيع</span><span class="expand" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="service-body"><p>شاشة واحدة تجمع لك: المبيعات، الأرباح، المرتجعات، وأفضل المنتجات — مع هدف شهري واضح. خفيفة، عربية، وتشتغل من جوالك.</p><ul class="service-deliverables"><li>لوحة مبيعات وأرباح واضحة</li><li>أفضل المنتجات والمرتجعات</li><li>متابعة هدف شهري</li></ul></div>
+        </details>
+        <details class="service" id="service-16" data-category="stores">
+          <summary><span class="service-marker"><span class="service-number">16</span><svg class="icon service-icon" aria-hidden="true"><use href="#i-mail"/></svg></span><span><span class="service-title">أتمتة الطلبات والعملاء</span><span class="service-subtitle" lang="en" dir="ltr">ORDER &amp; CUSTOMER AUTOMATION</span><span class="service-category">المتاجر الصغيرة</span></span><span class="service-duration"><bdi>1–3</bdi> أسابيع</span><span class="expand" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="service-body"><p>تأكيد الطلب، حالة الشحنة، وتذكير السلات المتروكة — رسائل تلقائية بوقتها، وردود جاهزة للأسئلة المتكررة، ضمن أدوات منصتك.</p><ul class="service-deliverables"><li>رسائل حالة الطلب تلقائيًا</li><li>تنبيهات السلات المتروكة</li><li>ردود جاهزة للأسئلة الشائعة</li></ul></div>
+        </details>
+        <details class="service" id="service-17" data-category="stores">
+          <summary><span class="service-marker"><span class="service-number">17</span><svg class="icon service-icon" aria-hidden="true"><use href="#i-shield"/></svg></span><span><span class="service-title">تشغيل المتجر شهريًا</span><span class="service-subtitle" lang="en" dir="ltr">MONTHLY STORE CARE</span><span class="service-category">المتاجر الصغيرة</span></span><span class="service-duration"><bdi>شهري</bdi> · متجدد</span><span class="expand" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="service-body"><p>أتابع متجرك شهرًا بشهر: تحديث التقارير والتنبيهات، تحسينات صغيرة مستمرة، ودعم مباشر عند الحاجة — تتعامل معي مباشرة، بلا وسطاء.</p><ul class="service-deliverables"><li>مراجعة شهرية للأرقام</li><li>تحسينات وتحديثات مستمرة</li><li>دعم مباشر عبر قناة واحدة</li></ul></div>
         </details>
           </div>
           <div class="service-footer"><strong><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>دعم وتشغيل شهري بعد التسليم</strong><span>المدد تقديرية، وتُعتمد بعد التقييم وتحديد النطاق.</span></div>
@@ -1186,7 +1212,8 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
       all: 'افتح الخدمة لتتعرف على نطاقها ومخرجاتها.',
       systems: 'الأنظمة والأتمتة: ربط الأنظمة وتنظيم تدفّق العمل بينها.',
       insight: 'البيانات والذكاء: قراءة أوضح لبياناتك، من التحليل إلى السؤال المباشر.',
-      operations: 'تشغيل الفروع: متابعة الفروع والمخزون والفرق وصحة الأنظمة.'
+      operations: 'تشغيل الفروع: متابعة الفروع والمخزون والفرق وصحة الأنظمة.',
+      stores: 'المتاجر الصغيرة: تهيئة المتجر، تقاريره، ربطه بالمخزون، وتشغيله شهريًا.'
     };
     serviceFilters.hidden = false;
     filterButtons.forEach(button => {
