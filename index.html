@@ -765,6 +765,56 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
 
   </style>
   <noscript><style>.menu-button{display:none}.nav-links{display:flex}@media(max-width:620px){.nav-links{position:static;flex-direction:row;flex-wrap:wrap;padding:8px 0;box-shadow:none;border:0;gap:5px 18px}.nav{height:auto;min-height:72px;flex-wrap:wrap;padding-block:12px}.nav-links{order:3;width:100%}.nav-links a{font-size:11px;padding:2px 0}}</style></noscript>
+
+<style>
+/* v5: clarity & trust additions */
+.hero-description .hero-lead { color: var(--ink); font-weight: 500; }
+.proof-facts { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); border-top: 1px solid var(--line); }
+.proof-fact { padding: 20px 26px 24px; }
+.proof-fact + .proof-fact { border-inline-start: 1px solid var(--line); }
+.proof-fact bdi { display: block; font: 600 15px/1.4 var(--latin); letter-spacing: .4px; color: var(--ink); }
+.proof-fact span { display: block; margin-top: 7px; font-size: 11px; color: var(--muted); }
+.case-band { background: var(--wash); border-block: 1px solid var(--line); padding-block: 100px; }
+.case-band-inner { display: grid; grid-template-columns: .95fr 1.5fr; gap: 80px; align-items: start; }
+.case-band-eyebrow { display: inline-flex; align-items: center; gap: 11px; font-size: 12px; color: var(--blue); margin-bottom: 22px; }
+.case-band-eyebrow::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.case-band h2 { font-size: clamp(32px,3.6vw,52px); letter-spacing: -1.6px; line-height: 1.5; }
+.case-band h2 span { color: var(--muted); }
+.case-band-head > p { margin-top: 18px; font-size: 14px; max-width: 400px; }
+.case-band-cols { border-top: 1px solid var(--line); }
+.case-band-col { display: grid; grid-template-columns: 140px 1fr; gap: 26px; padding-block: 27px; border-bottom: 1px solid var(--line); }
+.case-band-step { font-size: 13px; color: var(--blue); padding-top: 2px; }
+.case-band-col p { font-size: 14px; color: var(--ink); max-width: 540px; }
+.mid-cta { display: flex; justify-content: space-between; align-items: center; gap: 30px; padding-block: 48px 0; }
+.mid-cta p { font-size: 17px; color: var(--ink); }
+.start-steps { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); border-top: 1px solid var(--line); }
+.start-step { display: grid; grid-template-columns: auto 1fr; gap: 18px; padding: 26px 30px; align-items: start; }
+.start-step + .start-step { border-inline-start: 1px solid var(--line); }
+.start-step bdi { font: 12px/2 var(--latin); color: var(--blue); border: 1px solid var(--line); padding: 0 8px; margin-top: 4px; }
+.start-step strong { display: block; font-size: 16px; font-weight: 500; }
+.start-step span { display: block; margin-top: 6px; font-size: 12px; color: var(--muted); }
+@media(max-width:1000px) {
+  .case-band-inner { grid-template-columns: 1fr; gap: 40px; }
+  .start-steps { grid-template-columns: 1fr; }
+  .start-step + .start-step { border-inline-start: 0; border-top: 1px solid var(--line); }
+}
+@media(max-width:620px) {
+  .theme-toggle { width: 44px; height: 44px; }
+  .menu-button { width: 44px; height: 44px; }
+  .nav-contact { min-height: 44px; }
+  .nav-contact .icon { width: 40px; height: 40px; padding: 10px; }
+  .proof-facts { grid-template-columns: 1fr 1fr; }
+  .proof-fact { padding: 16px 18px; }
+  .proof-fact + .proof-fact { border-inline-start: 0; }
+  .proof-fact:nth-child(even) { border-inline-start: 1px solid var(--line); }
+  .proof-fact:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .case-band { padding-block: 70px; }
+  .case-band-col { grid-template-columns: 1fr; gap: 10px; padding-block: 22px; }
+  .mid-cta { flex-direction: column; align-items: flex-start; gap: 16px; padding-block: 40px 0; }
+  .mid-cta .btn { width: 100%; }
+  .start-step { padding: 20px 22px; }
+}
+</style>
 </head>
 <body>
   <svg width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">
@@ -818,9 +868,9 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
         <div class="hero-copy">
           <div class="kicker">هندسة الأنظمة المؤسسية</div>
           <h1 id="hero-title"><span>أعمالك،</span><span>بإيقاع <span class="outline-word">آخر.</span></span><span class="accent-line">كلّها متّصلة.</span></h1>
-          <p class="hero-description">خلف الأعمال الاستثنائية، أنظمة تفهم بعضها.<br>أربط أنظمتك، وأحرّر فريقك من التكرار، وأحوّل بياناتك إلى قرارات أوضح.</p>
+          <p class="hero-description"><span class="hero-lead">أساعد شركات التجزئة على ربط أنظمتها، أتمتة عملياتها، وتحويل بياناتها إلى قرارات أوضح.</span><br>خلف الأعمال الاستثنائية، أنظمة تفهم بعضها.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/966553377408">لنبنِ ما هو قادم <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-primary" href="https://wa.me/966553377408">احجز جلسة 30 دقيقة <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             <a class="text-link" href="#experience">اكتشف الفرق بنفسك <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
           </div>
           <p class="hero-note">نبدأ بمحادثة. 30 دقيقة لفهم عملك، بدون مقابل.</p>
@@ -828,12 +878,12 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
         <div class="hero-visual">
           <div class="core-stage"><div class="core-fallback" aria-hidden="true"></div><canvas id="core-canvas" aria-hidden="true"></canvas></div>
           <div class="scene-coordinate" aria-hidden="true"><span>FIG. 01 / THE CONNECTED CORE</span>INDEPENDENT PARTS.<br>EXTRAORDINARY TOGETHER.</div>
-          <span class="node-label node-one" aria-hidden="true">01 — SYSTEMS</span><span class="node-label node-two" aria-hidden="true">02 — DATA</span><span class="node-label node-three" aria-hidden="true">03 — AUTOMATION</span>
+          <span class="node-label node-one" aria-hidden="true">01 — ERP · D365</span><span class="node-label node-two" aria-hidden="true">02 — POS · E-COM</span><span class="node-label node-three" aria-hidden="true">03 — DATA · BI</span>
           <div class="core-control">
             <button id="system-toggle" class="system-toggle" type="button" aria-pressed="true" aria-label="توصيل المنظومة" hidden><span class="switch-track" aria-hidden="true"></span><span id="system-label">منظومة متّصلة</span></button>
             <button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="false" aria-label="إيقاف حركة المجسّم" hidden><span aria-hidden="true">Ⅱ</span></button>
           </div>
-          <p class="scene-caption" id="scene-hint">تمثيل بصري لفكرة واحدة: قيمة الأجزاء في اتصالها.</p>
+          <p class="scene-caption" id="scene-hint">تمثيل بصري لفكرة واحدة: أنظمة وبيانات منفصلة — تتّصل، فتصير نواة واحدة.</p>
           <p class="sr" id="core-status" role="status" aria-atomic="true"></p>
         </div>
       </div>
@@ -860,6 +910,12 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
       <div class="proof-inner wrap">
         <div><span class="proof-eyebrow">خبرة على أرض الواقع</span><h2 class="proof-heading">مجموعة تجزئة سعودية بأكثر من 50 فرعًا</h2></div>
         <div class="proof-context"><svg class="icon" aria-hidden="true"><use href="#i-branch"/></svg><p>فهمٌ لواقع التشغيل.<br><span>من أنظمة الفروع، إلى الصورة الكاملة.</span></p></div>
+      </div>
+      <div class="proof-facts wrap">
+        <div class="proof-fact"><bdi>ERP · D365</bdi><span>تكامل الأنظمة المؤسسية</span></div>
+        <div class="proof-fact"><bdi>ZATCA</bdi><span>امتثال الفوترة الإلكترونية</span></div>
+        <div class="proof-fact"><bdi>POS · E-COM</bdi><span>ربط المتاجر ونقاط البيع</span></div>
+        <div class="proof-fact"><bdi>DATA · BI</bdi><span>أتمتة تقارير ولوحات قرار</span></div>
       </div>
     </section>
 
@@ -989,6 +1045,26 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
       </div>
     </section>
 
+    <section class="case-band" aria-label="من داخل التجربة">
+      <div class="wrap case-band-inner reveal">
+        <div class="case-band-head">
+          <span class="case-band-eyebrow">من داخل التجربة</span>
+          <h2>التحدّي واحد.<br><span>الحل يبدأ من الربط.</span></h2>
+          <p>من تجربة ميدانية داخل مجموعة تجزئة سعودية — بدون أسماء، احترامًا&nbsp;للخصوصية.</p>
+        </div>
+        <div class="case-band-cols">
+          <div class="case-band-col"><span class="case-band-step">التحدّي</span><p>تقارير يومية تُجمع يدويًا من كل فرع، وأرقام تختلف من نظام لآخر.</p></div>
+          <div class="case-band-col"><span class="case-band-step">ما بُني</span><p>طبقة ربط موحّدة بين أنظمة المبيعات والمخزون، ولوحات تقارير تلقائية للفرع وللمجموعة.</p></div>
+          <div class="case-band-col"><span class="case-band-step">النتيجة</span><p>قراءة واحدة موثوقة لكل الفروع — تجميع أقل، ووضوح أكبر قبل القرار.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mid-cta wrap reveal">
+      <p>أعجبك الاتجاه؟ لنطبّقه على بياناتك.</p>
+      <a class="btn btn-primary" href="https://wa.me/966553377408">احجز جلسة 30 دقيقة <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+
     <section id="approach" class="section wrap" aria-labelledby="approach-title">
       <div class="process-layout">
         <div class="process-intro reveal">
@@ -1029,8 +1105,16 @@ bdi,.latin { font-family: var(--latin); font-variant-numeric: tabular-nums; }
         <details><summary>هل يمكن العمل مع أنظمتنا الحالية؟</summary><p>نراجع إمكانات الربط والصلاحيات المتاحة أثناء التقييم، ونحدد ما يمكن تنفيذه قبل اعتماد نطاق العمل.</p></details>
         <details><summary>كيف يتحدد نطاق العمل والمدة؟</summary><p>بعد فهم الأنظمة وحجم العمل، أقدّم نطاقًا محددًا ومخرجات واضحة. مدد الخدمات تقديرية، وتُعتمد مع متطلبات الوصول والبيانات ومعايير القبول.</p></details>
         <details><summary>ماذا يحدث بعد التسليم؟</summary><p>يشمل التسليم التوثيق والتدريب على الحل. يتوفر دعم وتشغيل شهري بعد التسليم، ويُتفق على نطاقه وآلية المتابعة بشكل مستقل.</p></details>
+        <details><summary>هل يمكن تنفيذ العمل عن بُعد؟</summary><p>نعم — أغلب الجلسات والمراجعات تتم عن بُعد، مع إمكانية الاتفاق على زيارات ميدانية حسب طبيعة المشروع وموقعه.</p></details>
+        <details><summary>من يملك الكود والبيانات بعد التسليم؟</summary><p>أنت. كل ما يُبنى لصالح عملك — الأكواد والإعدادات والوثائق — يُسلَّم كاملًا ويبقى ملكك، دون ارتباط تشغيلي إجباري.</p></details>
       </div>
     </section>
+
+    <div class="start-steps wrap reveal" aria-label="كيف نبدأ؟">
+      <div class="start-step"><bdi>01</bdi><div><strong>محادثة قصيرة</strong><span>30 دقيقة لفهم نقطة البداية.</span></div></div>
+      <div class="start-step"><bdi>02</bdi><div><strong>نطاق ومخرجات</strong><span>خطة واضحة بمدد ومعايير قبول.</span></div></div>
+      <div class="start-step"><bdi>03</bdi><div><strong>تنفيذ وتسليم</strong><span>بناء على مراحل، ثم توثيق وتدريب.</span></div></div>
+    </div>
 
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="wrap contact-inner reveal">
